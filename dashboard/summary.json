@@ -1,0 +1,1532 @@
+{
+  "source": {
+    "file": "leads_90_dias.csv",
+    "url": "https://3-229-72-89.sslip.io/api/downloads/cierre/leads_90_dias",
+    "time_zone": "America/Guayaquil (UTC-05:00)",
+    "period_inclusive": [
+      "2026-06-30",
+      "2026-09-27"
+    ],
+    "calendar_days": 90,
+    "row_grain": "Un registro por lead_id. No se eliminan filas.",
+    "sha256": "6862419d356b02e565935c5d676dc27c945df599b186fa2dbb09841d07764405"
+  },
+  "totals": {
+    "rows": 3890,
+    "unique_lead_ids": 3890,
+    "status": {
+      "procesado": 3672,
+      "duplicado": 115,
+      "fallido": 85,
+      "rechazado": 18
+    },
+    "platform": {
+      "facebook": 1868,
+      "instagram": 2022
+    },
+    "processed_routes": {
+      "basura": 667,
+      "caliente": 902,
+      "tibio": 2103
+    },
+    "hot": 902,
+    "hot_booked": 409,
+    "hot_missing_booking": 0,
+    "warm_booked": 229,
+    "patient_api_blank": 51,
+    "aligners_outside_valle": 0
+  },
+  "sla": {
+    "rule": "minutos_hasta_aviso < 5 (estricto)",
+    "denominator": 902,
+    "measured": 902,
+    "under_5": 752,
+    "exactly_5": 7,
+    "at_least_5": 150,
+    "missing": 0,
+    "median_min": 2.8,
+    "p90_nearest_rank_min": 6.0,
+    "max_min": 18.2
+  },
+  "failure_reasons": {
+    "JSON inválido del LLM": 34,
+    "timeout API pacientes": 51
+  },
+  "rejection_reasons": {
+    "sin teléfono ni correo válidos": 18
+  },
+  "campaigns": [
+    {
+      "name": "Chequeo Anual",
+      "leads": 991,
+      "processed": 930,
+      "routes": {
+        "basura": 185,
+        "tibio": 536,
+        "caliente": 209
+      },
+      "hot": 209,
+      "hot_booked": 101,
+      "hot_booking_rate": 0.48325358851674644,
+      "hot_unknown_booking": 0
+    },
+    {
+      "name": "Ortodoncia sin Excusas",
+      "leads": 1143,
+      "processed": 1082,
+      "routes": {
+        "tibio": 556,
+        "caliente": 358,
+        "basura": 168
+      },
+      "hot": 358,
+      "hot_booked": 140,
+      "hot_booking_rate": 0.39106145251396646,
+      "hot_unknown_booking": 0
+    },
+    {
+      "name": "Sonrisa Blanca",
+      "leads": 1756,
+      "processed": 1660,
+      "routes": {
+        "caliente": 335,
+        "tibio": 1011,
+        "basura": 314
+      },
+      "hot": 335,
+      "hot_booked": 168,
+      "hot_booking_rate": 0.5014925373134328,
+      "hot_unknown_booking": 0
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-06-30",
+      "leads": 41,
+      "platform": {
+        "facebook": 23,
+        "instagram": 18
+      },
+      "status": {
+        "procesado": 39,
+        "duplicado": 2
+      },
+      "hot": 5,
+      "hot_under_5_min": 5,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-01",
+      "leads": 46,
+      "platform": {
+        "facebook": 21,
+        "instagram": 25
+      },
+      "status": {
+        "procesado": 41,
+        "duplicado": 2,
+        "fallido": 3
+      },
+      "hot": 7,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-02",
+      "leads": 42,
+      "platform": {
+        "instagram": 26,
+        "facebook": 16
+      },
+      "status": {
+        "procesado": 38,
+        "duplicado": 2,
+        "fallido": 2
+      },
+      "hot": 6,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-03",
+      "leads": 44,
+      "platform": {
+        "instagram": 23,
+        "facebook": 21
+      },
+      "status": {
+        "procesado": 42,
+        "duplicado": 1,
+        "fallido": 1
+      },
+      "hot": 9,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-04",
+      "leads": 29,
+      "platform": {
+        "instagram": 11,
+        "facebook": 18
+      },
+      "status": {
+        "procesado": 26,
+        "rechazado": 1,
+        "duplicado": 2
+      },
+      "hot": 8,
+      "hot_under_5_min": 8,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-05",
+      "leads": 20,
+      "platform": {
+        "facebook": 10,
+        "instagram": 10
+      },
+      "status": {
+        "procesado": 19,
+        "duplicado": 1
+      },
+      "hot": 4,
+      "hot_under_5_min": 3,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-06",
+      "leads": 74,
+      "platform": {
+        "facebook": 35,
+        "instagram": 39
+      },
+      "status": {
+        "duplicado": 2,
+        "procesado": 71,
+        "fallido": 1
+      },
+      "hot": 23,
+      "hot_under_5_min": 20,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-07",
+      "leads": 46,
+      "platform": {
+        "facebook": 20,
+        "instagram": 26
+      },
+      "status": {
+        "procesado": 44,
+        "fallido": 1,
+        "duplicado": 1
+      },
+      "hot": 12,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-08",
+      "leads": 40,
+      "platform": {
+        "instagram": 20,
+        "facebook": 20
+      },
+      "status": {
+        "procesado": 37,
+        "duplicado": 2,
+        "fallido": 1
+      },
+      "hot": 9,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-09",
+      "leads": 44,
+      "platform": {
+        "facebook": 17,
+        "instagram": 27
+      },
+      "status": {
+        "procesado": 40,
+        "duplicado": 1,
+        "fallido": 2,
+        "rechazado": 1
+      },
+      "hot": 13,
+      "hot_under_5_min": 11,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-10",
+      "leads": 46,
+      "platform": {
+        "instagram": 29,
+        "facebook": 17
+      },
+      "status": {
+        "fallido": 3,
+        "procesado": 43
+      },
+      "hot": 6,
+      "hot_under_5_min": 3,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-11",
+      "leads": 25,
+      "platform": {
+        "instagram": 13,
+        "facebook": 12
+      },
+      "status": {
+        "procesado": 25
+      },
+      "hot": 8,
+      "hot_under_5_min": 8,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-12",
+      "leads": 30,
+      "platform": {
+        "instagram": 17,
+        "facebook": 13
+      },
+      "status": {
+        "procesado": 28,
+        "duplicado": 1,
+        "fallido": 1
+      },
+      "hot": 7,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-13",
+      "leads": 93,
+      "platform": {
+        "facebook": 49,
+        "instagram": 44
+      },
+      "status": {
+        "procesado": 90,
+        "fallido": 2,
+        "duplicado": 1
+      },
+      "hot": 16,
+      "hot_under_5_min": 14,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-14",
+      "leads": 41,
+      "platform": {
+        "instagram": 21,
+        "facebook": 20
+      },
+      "status": {
+        "procesado": 39,
+        "duplicado": 2
+      },
+      "hot": 10,
+      "hot_under_5_min": 8,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-15",
+      "leads": 42,
+      "platform": {
+        "facebook": 17,
+        "instagram": 25
+      },
+      "status": {
+        "procesado": 38,
+        "rechazado": 1,
+        "fallido": 1,
+        "duplicado": 2
+      },
+      "hot": 5,
+      "hot_under_5_min": 4,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-16",
+      "leads": 50,
+      "platform": {
+        "instagram": 36,
+        "facebook": 14
+      },
+      "status": {
+        "procesado": 50
+      },
+      "hot": 15,
+      "hot_under_5_min": 11,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-17",
+      "leads": 48,
+      "platform": {
+        "instagram": 21,
+        "facebook": 27
+      },
+      "status": {
+        "procesado": 45,
+        "rechazado": 1,
+        "fallido": 2
+      },
+      "hot": 9,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-18",
+      "leads": 24,
+      "platform": {
+        "instagram": 17,
+        "facebook": 7
+      },
+      "status": {
+        "procesado": 20,
+        "fallido": 2,
+        "rechazado": 1,
+        "duplicado": 1
+      },
+      "hot": 7,
+      "hot_under_5_min": 5,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-19",
+      "leads": 28,
+      "platform": {
+        "instagram": 12,
+        "facebook": 16
+      },
+      "status": {
+        "procesado": 27,
+        "fallido": 1
+      },
+      "hot": 5,
+      "hot_under_5_min": 5,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-20",
+      "leads": 65,
+      "platform": {
+        "facebook": 30,
+        "instagram": 35
+      },
+      "status": {
+        "procesado": 61,
+        "rechazado": 1,
+        "duplicado": 1,
+        "fallido": 2
+      },
+      "hot": 15,
+      "hot_under_5_min": 12,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-21",
+      "leads": 37,
+      "platform": {
+        "instagram": 19,
+        "facebook": 18
+      },
+      "status": {
+        "fallido": 2,
+        "procesado": 34,
+        "duplicado": 1
+      },
+      "hot": 8,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-22",
+      "leads": 35,
+      "platform": {
+        "facebook": 15,
+        "instagram": 20
+      },
+      "status": {
+        "procesado": 34,
+        "duplicado": 1
+      },
+      "hot": 10,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-23",
+      "leads": 44,
+      "platform": {
+        "facebook": 20,
+        "instagram": 24
+      },
+      "status": {
+        "procesado": 40,
+        "duplicado": 2,
+        "fallido": 2
+      },
+      "hot": 11,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-24",
+      "leads": 41,
+      "platform": {
+        "facebook": 18,
+        "instagram": 23
+      },
+      "status": {
+        "procesado": 41
+      },
+      "hot": 8,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-25",
+      "leads": 19,
+      "platform": {
+        "facebook": 11,
+        "instagram": 8
+      },
+      "status": {
+        "procesado": 18,
+        "duplicado": 1
+      },
+      "hot": 10,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-26",
+      "leads": 29,
+      "platform": {
+        "facebook": 12,
+        "instagram": 17
+      },
+      "status": {
+        "procesado": 29
+      },
+      "hot": 8,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-27",
+      "leads": 49,
+      "platform": {
+        "instagram": 22,
+        "facebook": 27
+      },
+      "status": {
+        "procesado": 45,
+        "duplicado": 2,
+        "fallido": 2
+      },
+      "hot": 14,
+      "hot_under_5_min": 12,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-28",
+      "leads": 44,
+      "platform": {
+        "facebook": 22,
+        "instagram": 22
+      },
+      "status": {
+        "procesado": 42,
+        "duplicado": 2
+      },
+      "hot": 11,
+      "hot_under_5_min": 9,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-29",
+      "leads": 44,
+      "platform": {
+        "instagram": 26,
+        "facebook": 18
+      },
+      "status": {
+        "procesado": 42,
+        "fallido": 1,
+        "duplicado": 1
+      },
+      "hot": 10,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-30",
+      "leads": 54,
+      "platform": {
+        "instagram": 30,
+        "facebook": 24
+      },
+      "status": {
+        "procesado": 51,
+        "duplicado": 3
+      },
+      "hot": 7,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-07-31",
+      "leads": 49,
+      "platform": {
+        "facebook": 30,
+        "instagram": 19
+      },
+      "status": {
+        "fallido": 3,
+        "procesado": 44,
+        "duplicado": 2
+      },
+      "hot": 7,
+      "hot_under_5_min": 5,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-01",
+      "leads": 25,
+      "platform": {
+        "instagram": 13,
+        "facebook": 12
+      },
+      "status": {
+        "procesado": 23,
+        "duplicado": 2
+      },
+      "hot": 7,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-02",
+      "leads": 29,
+      "platform": {
+        "instagram": 19,
+        "facebook": 10
+      },
+      "status": {
+        "procesado": 28,
+        "fallido": 1
+      },
+      "hot": 10,
+      "hot_under_5_min": 9,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-03",
+      "leads": 75,
+      "platform": {
+        "facebook": 39,
+        "instagram": 36
+      },
+      "status": {
+        "procesado": 74,
+        "fallido": 1
+      },
+      "hot": 16,
+      "hot_under_5_min": 14,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-04",
+      "leads": 52,
+      "platform": {
+        "instagram": 25,
+        "facebook": 27
+      },
+      "status": {
+        "procesado": 50,
+        "rechazado": 1,
+        "duplicado": 1
+      },
+      "hot": 12,
+      "hot_under_5_min": 12,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-05",
+      "leads": 47,
+      "platform": {
+        "instagram": 23,
+        "facebook": 24
+      },
+      "status": {
+        "procesado": 46,
+        "duplicado": 1
+      },
+      "hot": 7,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-06",
+      "leads": 46,
+      "platform": {
+        "instagram": 26,
+        "facebook": 20
+      },
+      "status": {
+        "procesado": 42,
+        "fallido": 1,
+        "duplicado": 3
+      },
+      "hot": 11,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-07",
+      "leads": 52,
+      "platform": {
+        "instagram": 24,
+        "facebook": 28
+      },
+      "status": {
+        "procesado": 52
+      },
+      "hot": 13,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-08",
+      "leads": 33,
+      "platform": {
+        "instagram": 20,
+        "facebook": 13
+      },
+      "status": {
+        "procesado": 33
+      },
+      "hot": 7,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-09",
+      "leads": 25,
+      "platform": {
+        "instagram": 17,
+        "facebook": 8
+      },
+      "status": {
+        "procesado": 25
+      },
+      "hot": 10,
+      "hot_under_5_min": 9,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-10",
+      "leads": 65,
+      "platform": {
+        "instagram": 38,
+        "facebook": 27
+      },
+      "status": {
+        "procesado": 63,
+        "duplicado": 2
+      },
+      "hot": 14,
+      "hot_under_5_min": 12,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-11",
+      "leads": 40,
+      "platform": {
+        "facebook": 19,
+        "instagram": 21
+      },
+      "status": {
+        "procesado": 39,
+        "duplicado": 1
+      },
+      "hot": 10,
+      "hot_under_5_min": 8,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-12",
+      "leads": 45,
+      "platform": {
+        "facebook": 24,
+        "instagram": 21
+      },
+      "status": {
+        "procesado": 42,
+        "fallido": 1,
+        "rechazado": 1,
+        "duplicado": 1
+      },
+      "hot": 19,
+      "hot_under_5_min": 14,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-13",
+      "leads": 50,
+      "platform": {
+        "facebook": 26,
+        "instagram": 24
+      },
+      "status": {
+        "procesado": 47,
+        "duplicado": 2,
+        "fallido": 1
+      },
+      "hot": 9,
+      "hot_under_5_min": 8,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-14",
+      "leads": 31,
+      "platform": {
+        "instagram": 15,
+        "facebook": 16
+      },
+      "status": {
+        "procesado": 30,
+        "fallido": 1
+      },
+      "hot": 5,
+      "hot_under_5_min": 5,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-15",
+      "leads": 38,
+      "platform": {
+        "instagram": 22,
+        "facebook": 16
+      },
+      "status": {
+        "procesado": 36,
+        "duplicado": 2
+      },
+      "hot": 13,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-16",
+      "leads": 23,
+      "platform": {
+        "instagram": 12,
+        "facebook": 11
+      },
+      "status": {
+        "procesado": 21,
+        "fallido": 1,
+        "duplicado": 1
+      },
+      "hot": 10,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-17",
+      "leads": 65,
+      "platform": {
+        "facebook": 34,
+        "instagram": 31
+      },
+      "status": {
+        "procesado": 62,
+        "duplicado": 2,
+        "fallido": 1
+      },
+      "hot": 16,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-18",
+      "leads": 17,
+      "platform": {
+        "facebook": 17
+      },
+      "status": {
+        "duplicado": 1,
+        "fallido": 2,
+        "procesado": 14
+      },
+      "hot": 1,
+      "hot_under_5_min": 1,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-19",
+      "leads": 22,
+      "platform": {
+        "facebook": 22
+      },
+      "status": {
+        "procesado": 21,
+        "duplicado": 1
+      },
+      "hot": 7,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-20",
+      "leads": 20,
+      "platform": {
+        "facebook": 20
+      },
+      "status": {
+        "procesado": 19,
+        "duplicado": 1
+      },
+      "hot": 5,
+      "hot_under_5_min": 5,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-21",
+      "leads": 18,
+      "platform": {
+        "facebook": 18
+      },
+      "status": {
+        "procesado": 17,
+        "fallido": 1
+      },
+      "hot": 5,
+      "hot_under_5_min": 4,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-22",
+      "leads": 28,
+      "platform": {
+        "instagram": 16,
+        "facebook": 12
+      },
+      "status": {
+        "procesado": 28
+      },
+      "hot": 7,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-23",
+      "leads": 26,
+      "platform": {
+        "instagram": 16,
+        "facebook": 10
+      },
+      "status": {
+        "procesado": 26
+      },
+      "hot": 12,
+      "hot_under_5_min": 11,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-24",
+      "leads": 84,
+      "platform": {
+        "instagram": 42,
+        "facebook": 42
+      },
+      "status": {
+        "procesado": 81,
+        "duplicado": 3
+      },
+      "hot": 24,
+      "hot_under_5_min": 20,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-25",
+      "leads": 49,
+      "platform": {
+        "instagram": 26,
+        "facebook": 23
+      },
+      "status": {
+        "procesado": 45,
+        "fallido": 1,
+        "duplicado": 2,
+        "rechazado": 1
+      },
+      "hot": 4,
+      "hot_under_5_min": 3,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-26",
+      "leads": 48,
+      "platform": {
+        "instagram": 29,
+        "facebook": 19
+      },
+      "status": {
+        "procesado": 44,
+        "duplicado": 3,
+        "rechazado": 1
+      },
+      "hot": 13,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-27",
+      "leads": 43,
+      "platform": {
+        "facebook": 21,
+        "instagram": 22
+      },
+      "status": {
+        "procesado": 42,
+        "fallido": 1
+      },
+      "hot": 12,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-28",
+      "leads": 43,
+      "platform": {
+        "instagram": 21,
+        "facebook": 22
+      },
+      "status": {
+        "procesado": 42,
+        "duplicado": 1
+      },
+      "hot": 10,
+      "hot_under_5_min": 8,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-29",
+      "leads": 44,
+      "platform": {
+        "instagram": 23,
+        "facebook": 21
+      },
+      "status": {
+        "procesado": 44
+      },
+      "hot": 15,
+      "hot_under_5_min": 13,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-30",
+      "leads": 30,
+      "platform": {
+        "instagram": 17,
+        "facebook": 13
+      },
+      "status": {
+        "procesado": 28,
+        "duplicado": 2
+      },
+      "hot": 3,
+      "hot_under_5_min": 3,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-08-31",
+      "leads": 52,
+      "platform": {
+        "facebook": 26,
+        "instagram": 26
+      },
+      "status": {
+        "procesado": 47,
+        "fallido": 2,
+        "duplicado": 2,
+        "rechazado": 1
+      },
+      "hot": 12,
+      "hot_under_5_min": 11,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-01",
+      "leads": 50,
+      "platform": {
+        "instagram": 22,
+        "facebook": 28
+      },
+      "status": {
+        "rechazado": 1,
+        "procesado": 46,
+        "fallido": 1,
+        "duplicado": 2
+      },
+      "hot": 9,
+      "hot_under_5_min": 9,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-02",
+      "leads": 49,
+      "platform": {
+        "facebook": 23,
+        "instagram": 26
+      },
+      "status": {
+        "procesado": 47,
+        "duplicado": 2
+      },
+      "hot": 7,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-03",
+      "leads": 57,
+      "platform": {
+        "facebook": 29,
+        "instagram": 28
+      },
+      "status": {
+        "procesado": 52,
+        "fallido": 2,
+        "rechazado": 1,
+        "duplicado": 2
+      },
+      "hot": 11,
+      "hot_under_5_min": 8,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-04",
+      "leads": 51,
+      "platform": {
+        "instagram": 33,
+        "facebook": 18
+      },
+      "status": {
+        "procesado": 47,
+        "duplicado": 3,
+        "fallido": 1
+      },
+      "hot": 10,
+      "hot_under_5_min": 5,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-05",
+      "leads": 23,
+      "platform": {
+        "instagram": 12,
+        "facebook": 11
+      },
+      "status": {
+        "procesado": 23
+      },
+      "hot": 5,
+      "hot_under_5_min": 4,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-06",
+      "leads": 23,
+      "platform": {
+        "facebook": 13,
+        "instagram": 10
+      },
+      "status": {
+        "procesado": 22,
+        "fallido": 1
+      },
+      "hot": 6,
+      "hot_under_5_min": 3,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-07",
+      "leads": 64,
+      "platform": {
+        "facebook": 28,
+        "instagram": 36
+      },
+      "status": {
+        "procesado": 61,
+        "duplicado": 3
+      },
+      "hot": 14,
+      "hot_under_5_min": 13,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-08",
+      "leads": 41,
+      "platform": {
+        "facebook": 18,
+        "instagram": 23
+      },
+      "status": {
+        "procesado": 33,
+        "duplicado": 3,
+        "fallido": 4,
+        "rechazado": 1
+      },
+      "hot": 10,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-09",
+      "leads": 48,
+      "platform": {
+        "instagram": 28,
+        "facebook": 20
+      },
+      "status": {
+        "procesado": 40,
+        "duplicado": 1,
+        "fallido": 7
+      },
+      "hot": 8,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-10",
+      "leads": 46,
+      "platform": {
+        "facebook": 22,
+        "instagram": 24
+      },
+      "status": {
+        "procesado": 39,
+        "fallido": 7
+      },
+      "hot": 11,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-11",
+      "leads": 50,
+      "platform": {
+        "facebook": 34,
+        "instagram": 16
+      },
+      "status": {
+        "procesado": 46,
+        "duplicado": 2,
+        "fallido": 1,
+        "rechazado": 1
+      },
+      "hot": 11,
+      "hot_under_5_min": 8,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-12",
+      "leads": 20,
+      "platform": {
+        "facebook": 9,
+        "instagram": 11
+      },
+      "status": {
+        "procesado": 20
+      },
+      "hot": 6,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-13",
+      "leads": 32,
+      "platform": {
+        "instagram": 17,
+        "facebook": 15
+      },
+      "status": {
+        "procesado": 29,
+        "duplicado": 3
+      },
+      "hot": 10,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-14",
+      "leads": 128,
+      "platform": {
+        "facebook": 57,
+        "instagram": 71
+      },
+      "status": {
+        "procesado": 124,
+        "fallido": 2,
+        "duplicado": 2
+      },
+      "hot": 33,
+      "hot_under_5_min": 28,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-15",
+      "leads": 55,
+      "platform": {
+        "facebook": 26,
+        "instagram": 29
+      },
+      "status": {
+        "procesado": 54,
+        "fallido": 1
+      },
+      "hot": 12,
+      "hot_under_5_min": 12,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-16",
+      "leads": 44,
+      "platform": {
+        "instagram": 20,
+        "facebook": 24
+      },
+      "status": {
+        "procesado": 39,
+        "duplicado": 4,
+        "fallido": 1
+      },
+      "hot": 13,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-17",
+      "leads": 50,
+      "platform": {
+        "instagram": 27,
+        "facebook": 23
+      },
+      "status": {
+        "procesado": 48,
+        "fallido": 1,
+        "duplicado": 1
+      },
+      "hot": 7,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-18",
+      "leads": 42,
+      "platform": {
+        "instagram": 22,
+        "facebook": 20
+      },
+      "status": {
+        "procesado": 41,
+        "duplicado": 1
+      },
+      "hot": 11,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-19",
+      "leads": 25,
+      "platform": {
+        "facebook": 12,
+        "instagram": 13
+      },
+      "status": {
+        "procesado": 22,
+        "duplicado": 3
+      },
+      "hot": 8,
+      "hot_under_5_min": 7,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-20",
+      "leads": 28,
+      "platform": {
+        "facebook": 10,
+        "instagram": 18
+      },
+      "status": {
+        "procesado": 26,
+        "duplicado": 1,
+        "fallido": 1
+      },
+      "hot": 2,
+      "hot_under_5_min": 2,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-21",
+      "leads": 70,
+      "platform": {
+        "instagram": 42,
+        "facebook": 28
+      },
+      "status": {
+        "procesado": 68,
+        "fallido": 2
+      },
+      "hot": 16,
+      "hot_under_5_min": 12,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-22",
+      "leads": 52,
+      "platform": {
+        "facebook": 31,
+        "instagram": 21
+      },
+      "status": {
+        "procesado": 52
+      },
+      "hot": 11,
+      "hot_under_5_min": 10,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-23",
+      "leads": 55,
+      "platform": {
+        "facebook": 22,
+        "instagram": 33
+      },
+      "status": {
+        "procesado": 50,
+        "duplicado": 2,
+        "rechazado": 3
+      },
+      "hot": 24,
+      "hot_under_5_min": 20,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-24",
+      "leads": 49,
+      "platform": {
+        "facebook": 19,
+        "instagram": 30
+      },
+      "status": {
+        "procesado": 47,
+        "duplicado": 2
+      },
+      "hot": 8,
+      "hot_under_5_min": 8,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-25",
+      "leads": 45,
+      "platform": {
+        "instagram": 26,
+        "facebook": 19
+      },
+      "status": {
+        "procesado": 42,
+        "duplicado": 2,
+        "fallido": 1
+      },
+      "hot": 3,
+      "hot_under_5_min": 3,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-26",
+      "leads": 33,
+      "platform": {
+        "instagram": 17,
+        "facebook": 16
+      },
+      "status": {
+        "procesado": 29,
+        "duplicado": 2,
+        "fallido": 2
+      },
+      "hot": 7,
+      "hot_under_5_min": 6,
+      "hot_missing_latency": 0
+    },
+    {
+      "date": "2026-09-27",
+      "leads": 32,
+      "platform": {
+        "facebook": 15,
+        "instagram": 17
+      },
+      "status": {
+        "procesado": 31,
+        "duplicado": 1
+      },
+      "hot": 7,
+      "hot_under_5_min": 5,
+      "hot_missing_latency": 0
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "instagram_gap",
+      "window": [
+        "2026-08-18",
+        "2026-08-21"
+      ],
+      "evidence": {
+        "current_platform_counts": {
+          "facebook": 77
+        },
+        "prior_same_weekdays_window": [
+          "2026-08-11",
+          "2026-08-14"
+        ],
+        "prior_platform_counts": {
+          "facebook": 85,
+          "instagram": 81
+        },
+        "instagram_returns_on": "2026-08-22"
+      },
+      "hypothesis": "Posible interrupción de la entrada de Instagram o pausa de campañas. El CSV no permite distinguirlas ni calcular leads perdidos.",
+      "proposed_alert": "Con campañas activas, avisar al responsable de integración si un canal lleva 2 horas sin entradas mientras el otro recibe al menos 3. Confirmar en Meta si hay leads y recuperar desde la fuente antes de reactivar; umbral propuesto, no implementado."
+    },
+    {
+      "id": "api_timeout_cluster",
+      "window": [
+        "2026-09-08",
+        "2026-09-10"
+      ],
+      "evidence": {
+        "leads": 135,
+        "failed": 18,
+        "failure_reasons": {
+          "timeout API pacientes": 17,
+          "JSON inválido del LLM": 1
+        }
+      },
+      "hypothesis": "Degradación temporal de la API de pacientes o de su acceso. No hay logs para probar la causa técnica.",
+      "proposed_alert": "Avisar al responsable técnico ante 3 timeouts consecutivos o más del 5% de errores de API en 15 minutos, con al menos 20 intentos; revisar estado de API, conservar pendientes y reintentar con backoff. Umbrales propuestos."
+    }
+  ]
+}

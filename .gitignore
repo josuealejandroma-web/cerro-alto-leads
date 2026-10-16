@@ -1,5 +1,12 @@
 .env
+.env.*
+!.env.example
 *.env.local
 node_modules/
 __pycache__/
 .venv/
+data/
+*.sqlite*
+*.db*
+test-results/
+*.log

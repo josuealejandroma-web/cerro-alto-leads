@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["intencion", "urgencia", "presupuesto_estimado", "siguiente_accion", "confianza"],
+  "properties": {
+    "intencion": {"type": "string", "enum": ["agendar", "contacto", "informacion", "tratamiento_alto_valor", "spam", "otro"]},
+    "urgencia": {"type": "string", "enum": ["alta", "normal"]},
+    "presupuesto_estimado": {"type": ["number", "null"], "minimum": 0},
+    "siguiente_accion": {"type": "string", "enum": ["recepcion", "seguimiento", "revision", "descartar"]},
+    "confianza": {"type": "number", "minimum": 0, "maximum": 1}
+  }
+}
